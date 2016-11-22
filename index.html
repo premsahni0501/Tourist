@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sagar</title>
+    <link rel="icon" type='image/x-icon' href="favicon.ico" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html" class="brand"><img src="img/sagar-logo.png" alt="logo" /></a>
+          <button type="button" class="toggle-btn" id="toggle-btn">
+            <img alt="Menu icon" class="img-responsive" src="img/menu_icon.png">
+          </button>
+
+          <div class="clearfix collapsing-panel" id="coll-panel">
+            <ul class="navbar-nav">
+              <li class="col col-sm-12 "><a href="index.html">Home</a></li>
+              <li class="col col-sm-12 "><a href="#main-content">Tourist and Crafts</a></li>
+              <li class="col col-sm-12 " id="planYourTrip"><a href="#">Plan your trip</a></li>
+              <li class="col col-sm-12 "><a href="#about">About</a></li>
+            </ul>
+            <a class="login-reg-btn" href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery clearfix">
+        <img alt="gallery_imgs" src="img/gallery/gokarna.jpg" id="imgContainer" class="img-responsive fade">
+      </div>
+
+      <div class="go-down clearfix">
+        <div class="btn-bg">
+          <a href="#main-content"><img alt="down" src="img/go-down.png" class="down-arrow img-responsive"></a>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="offer-img">
+          <img alt="offer" src="img/offer_img.jpg" class="img-responsive">
+          <button class="btn-bg red" id="close-btn">&times;</button>
+        </div>
+      </div>
+
+
+      <div class="trip-planning" action=''>
+        <div class="form-popup clearfix">
+          <h3>Send your Details and we will contact you.</h3>
+          <form action="" method="post" class='clearfix' id='planTripMsgSubmit' onsubmit="submitForm()">
+            <div class="input-box">
+              <input type="text" name="name" value="" id="name" placeholder="Your name">
+            </div>
+            <div class="input-box">
+              <span class='country-code'>+91</span><input type="phone" name="phone" id="phone" value="" placeholder="Your mobile/contact number" maxlength="10">
+            </div>
+            <div class="input-box">
+              <input type="email" name="email" id="email"value="" placeholder="Your email address.">
+            </div>
+            <div class="msgBox">
+              <textarea placeholder="Your message.." id="msgBox"></textarea>
+            </div>
+            <div>
+              <button class="btn gray" id="cancel">Cancel</button>
+              <button type="submit" class="btn green" id="send">Send</button>
+            </div>
+          </form>
+          <p id='errMsg'></p>
+        </div>
+      </div>
+
+      <div class="content-area col col-md-12 col-sm-12" id="main-content">
+        <div class="col col-md-6">
+          <div class="article col col-md-12">
+            <h4>Historic Places.</h4>
+            <p>
+              In this package we include historic places in and around Sagara Town along with Jog Falls which included beautiful musical fountain with Laser show.
+              <br>
+            </p>
+            <p class="breifing">
+              <strong><u>Keladi:</u></strong><br>
+              Shivappa Nayaka and Chennamma were the rulers of this kingdom.After the disintegration of Vijayanagar Empire..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Ikkeri:</u></strong><br>
+              It was, from about 1560 to 1640 AD, the capital of the Nayakas of Keladi chiefs, afterwards removed to Bednur Nagara. Ikkeri continued..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Varadahalli:</u></strong><br>
+              It is notable for the hill shrine of Shri Sridhara Swami Ashram. It is famous for the Samadhi of His Holiness Sri Sridhara Swami one of the great saints of 20th century..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Jog Falls:</u></strong><br>
+              Jog Falls, Gerosoppa Falls or Joga Falls is the second-highest plunge waterfall in India located in Sagara taluk in the state of Karnataka.
+              The segmented falls are a major tourist attraction. They are also known as the Gersoppa Falls or Jogada Gundi..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+            </p>
+            <div class="article-pic">
+              <img src="img/gallery/jog2.jpg" alt="place-picture"class="img-responsive">
+              <h6>Jog Falls</h6>
+            </div>
+
+            <div class="article-buttons">
+              <button class="btn">Explore</button>
+              <button class="btn">Plan your trip</button>
+            </div>
+          </div>
+
+          <div class="article col col-md-12">
+            <h4>Adventure Trip.</h4>
+            <p>
+              In this package we include Adventure places where visitors enjoy adventure activities like small trekking.
+              <br>
+            </p>
+            <p class="breifing">
+              <strong><u>Unchalli Falls:</u></strong><br>
+               Also known as Lushington Falls, is a waterfall created by a 116 metres (381 ft) drop in the Aghanashini river..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Yana:</u></strong><br>
+              Yana is a place located in forests near Sirsi, which is known for the unusual rock formations..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Sirsi:</u></strong><br>
+              Sirsi was known as Kalyanapattana during the Sonda Dynasty. It is the largest town and main commercial centre and business hub..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+            </p>
+            <div class="article-pic">
+              <img src="img/gallery/yana.jpg" alt="place-picture"class="img-responsive">
+              <h6>Yana</h6>
+            </div>
+
+            <div class="article-buttons">
+              <button class="btn">Explore</button>
+              <button class="btn">Plan your trip</button>
+            </div>
+          </div>
+
+          <div class="article col col-md-12">
+            <h4>Temples and Falls.</h4>
+            <p>
+              In this special trip we are covering spiritual and nature beauty of Malnad.
+              <br>
+            </p>
+            <p class="breifing">
+              <strong><u>Sigandur:</u></strong><br>
+               It is surrounded on three sides by back waters of Linganamakki dam formed by Sharavathi River. The place is known for Sigandur Chowdeshwari Temple, which attracts hundreds of people every day..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Jog Falls:</u></strong><br>
+              Jog Falls, Gerosoppa Falls or Joga Falls is the second-highest plunge waterfall in India located in Sagara taluk in the state of Karnataka.
+              The segmented falls are a major tourist attraction. They are also known as the Gersoppa Falls or Jogada Gundi..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Ikkeri:</u></strong><br>
+              It was, from about 1560 to 1640 AD, the capital of the Nayakas of Keladi chiefs, afterwards removed to Bednur Nagara. Ikkeri continued..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Varadahalli:</u></strong><br>
+              It is notable for the hill shrine of Shri Sridhara Swami Ashram. It is famous for the Samadhi of His Holiness Sri Sridhara Swami one of the great saints of 20th century..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+            </p>
+            <div class="article-pic">
+              <img src="img/gallery/sigandur.jpg" alt="place-picture"class="img-responsive">
+              <h6>Sigandur</h6>
+            </div>
+
+            <div class="article-buttons">
+              <button class="btn">Explore</button>
+              <button class="btn">Plan your trip</button>
+            </div>
+          </div>
+
+          <div class="article col col-md-12">
+            <h4>Coastal special.</h4>
+            <p>
+              This trip covers beautiful places around coastal region of famous Murudeshwar Temple and many more.
+              <br>
+            </p>
+            <p class="breifing">
+              <strong><u>Murudeshwar:</u></strong><br>
+              Murudeshwara, is another name of the Hindu god Shiva. Famous for the world's second-tallest Shiva statue, lies on the coast of the Arabian Sea and is also famous for the Murdeshwar Temple..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+              <br>
+              <strong><u>Gokarna:</u></strong><br>
+              Gokarna means Cow's Ear. It is believed that Lord Shiva emerged from the ear of a cow (Prithvi, the Mother Earth) here. It is at the ear-shaped confluence of two rivers Gangavali and Aghanashini..
+              <a href="#" class="read-more"><strong><em>Read more..</em></a></strong>
+            </p>
+            <div class="article-pic">
+              <img src="img/gallery/gokarna.jpg" alt="place-picture"class="img-responsive">
+              <h6>Gokarna</h6>
+            </div>
+
+            <div class="article-buttons">
+              <button class="btn">Explore</button>
+              <button class="btn">Plan your trip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-6">
+          <div class="article col col-md-12 col-sm-12">
+            <h4>Crafts</h4>
+            <p>
+              Sagara have been engaged in sandalwood and ivory carving. Men make idols, figurines and knickknacks like penholders, agarbathi stands, cuff links, photo frames
+              and paper clips;the women are adept at making garlands and wreaths out of thin layers of scraped sandalwood.
+
+            </p>
+            <div class="crafts col col-md-6">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft1.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft2.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft3.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft4.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft5.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft6.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft7.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft8.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft9.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft10.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft11.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft12.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft13.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft25.jpg">
+            </div>
+            <div class="crafts col col-md-6">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft14.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft15.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft16.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft17.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft18.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft19.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft20.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft21.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft22.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft23.jpg">
+              <img alt="craft" class="img-responsive" src="img/crafts/craft24.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid" >
+      <div class="info-container col col-md-12" id="about">
+        <div class="info col col-md-12">
+          <div class="about col col-md-12">
+            <h3>Sagar</h3>
+            <p>
+              <em>Sagar is a city located in the Indian state of Karnataka and it is also a sub divisional and a taluk headquarters.
+              Located in theWestern Ghats range, it is known for its proximity to Jog Falls and to the historical places of Ikkeri, 
+              Keladi and Varadamoola. The river Varada originates near Sagara.</em>
+            </p>
+          </div>
+
+          <h4 class="col col-md-12">Contact</h4>
+          <div class="addr col col-md-6 col-sm-12">
+            <h5 class="border-bottom">Address</h5>
+            <p>
+              Sagar,Karnataka<br>
+              Pin code - 577401.
+            </p>
+          </div>
+          <div class="contact-num col col-md-6 col-sm-12">
+            <h5 class="border-bottom">Contact us</h5>
+            <p>Phone number : +91-1234567890</p>
+            <p>Email : info@tourist.com</p>
+          </div>
+
+          <div class="social-follow col col-md-12">
+            <h4>Follow us on Social</h4>
+            <span class="social-icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+            <span class="social-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+            <span class="social-icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+            <span class="social-icon"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
+          </div>
+
+          <div class="col col-md-12 col-sm-12">
+            <p class="footer">&copy; 2016, Sagar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+    <script src="https://use.fontawesome.com/c2a07e23de.js"></script>
+  </body>
+</html>
